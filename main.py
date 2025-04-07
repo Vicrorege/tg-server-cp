@@ -72,7 +72,7 @@ def services_(message):
 def service_handler(call):
     if call.from_user.id in allowed_users:
         service = call.data
-        req=os.system(f"sudo systemctl status {service}>{os.path.join(home, 'buffer').replace(" ", "\\ ")}")
+        req=os.system(f'sudo systemctl status {service}>"{buffer}"')
         print(req)
         with open(os.path.join(home, 'buffer'), 'r') as f:
             status = f.read()
