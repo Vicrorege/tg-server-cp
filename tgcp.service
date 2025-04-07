@@ -1,0 +1,12 @@
+[Unit]
+Description=tgcp
+
+[Service]
+User=root
+Group=root
+Type=simple
+ExecStart=/root/tg-control-panel/venv/bin/python3 /root/tg-control-panel/main.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
