@@ -1,0 +1,58 @@
+{
+    "registration_greet":{
+        "ru": "Поздравляем! Вы завершили установку бота. Если вам потребуется поменять настройки, то вы можете это сделать, поменяв ~/serverctrl/config.json. \nВаш id: <b>{id}</b>.",
+        "en": "Congratulations! You have completed the setup of the bot. If you need to make changes, you can do so by changing ~/serverctrl/config.json. \nYour id: <b>{id}</b>."
+    },
+    "greet_accept": {
+        "ru": "Приветствую, {username}! Добро пожаловать в панель управления! Для получения дополнительной помощи, введите /help.",
+        "en": "Hello, {username}! Welcome to server control panel! To get help message type /help."
+    },
+    "denied_error":{
+        "ru": "Доступ запрещён",
+        "en": "Access denied"
+    },
+    "help":{
+        "ru": "Помощь:\n1.Для перезагрузки сервера, введите /reboot.\n2.Для управления сервисами, используйте /systemctl.",
+        "en": "Help:\n1. To reboot server, type /reboot.\n2. To manage services, use /systemctl."
+    },
+    "services": {
+        "ru":"Сервисы, доступные на данный момент: {*services}, \nвыберите действие из списка ниже:",
+        "en":"Services available at the moment: {*services}, \nselect action from the list below:"
+    },
+    "systemctl_greet":{
+        "ru":"Выберите сервис из списка ниже:",
+        "en":"Select service from the list below:"
+    },
+    "service_not_found":{
+        "ru":"Сервис не найден",
+        "en":"Service not found"
+    },
+    "service_status":{
+        "ru":"Статус сервиса {service}: \n{status}",
+        "en":"Service status {service}: \n{status}"
+    },
+    "service_start":{
+        "ru":"Сервис запущен",
+        "en":"Service started"
+    },
+    "service_stop":{
+        "ru":"Сервис остановлен",
+        "en":"Service stopped"
+    },
+    "service_restart":{
+        "ru":"Сервис перезапущен",
+        "en":"Service restarted"
+    },
+    "service_enable":{
+        "ru":"Сервис включен",
+        "en":"Service enabled"
+    },
+    "service_disable":{
+        "ru":"Сервис отключен",
+        "en":"Service disabled"
+    },
+    "come_back":{
+        "ru":"Вернуться",
+        "en":"Back"
+    }
+}
