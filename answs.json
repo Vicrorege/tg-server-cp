@@ -1,7 +1,7 @@
 {
     "registration_greet":{
-        "ru": "Поздравляем! Вы завершили установку бота. Если вам потребуется поменять настройки, то вы можете это сделать, поменяв ~/serverctrl/config.json. \nВаш id: <b>{id}</b>.",
-        "en": "Congratulations! You have completed the setup of the bot. If you need to make changes, you can do so by changing ~/serverctrl/config.json. \nYour id: <b>{id}</b>."
+        "ru": "Поздравляем! Вы завершили установку бота. Если вам потребуется поменять настройки, то вы можете это сделать, поменяв ~/tg-server-cp/config.json. \nВаш id: <b>{id}</b>.",
+        "en": "Congratulations! You have completed the setup of the bot. If you need to make changes, you can do so by changing ~/tg-server-cp/config.json. \nYour id: <b>{id}</b>."
     },
     "greet_accept": {
         "ru": "Приветствую, {username}! Добро пожаловать в панель управления! Для получения дополнительной помощи, введите /help.",
