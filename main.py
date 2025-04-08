@@ -115,4 +115,11 @@ def come_back_handler(call):
         bot.edit_message_reply_markup(chat_id=call.message.chat.id, message_id=call.message.message_id, reply_markup=markup)
     else:
         bot.edit_message_text(chat_id=call.message.chat.id, text=get_answer("denied_error"), message_id=call.message.message_id)
+
+bot.set_my_commands(commands=[
+    types.BotCommand(command="start", description="start"),
+    types.BotCommand(command="reboot", description="reboot server"),
+    types.BotCommand(command="systemctl", description="services control"),
+    ])
+
 bot.polling(non_stop=True)
