@@ -22,7 +22,7 @@ services = config["services"]
 bot = telebot.TeleBot(config["bot_token"])
 
 def get_answer(answer_code, lang = config["app"]["lang"]):
-    with open('answs.json', "r") as f:
+    with open(os.path.join(home, 'answs.json'), "r") as f:
         answers = json.load(f)
     return answers[answer_code][lang]
 
