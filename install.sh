@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+
 echo "Instalation started..."
 if [ "$EUID" -ne 0 ]; then
     exec sudo "$0" "$@"
@@ -15,6 +16,8 @@ nano ./tgcp.service
 cp ./tgcp.service /etc/systemd/system/tgcp.service
 
 nano ./config.json
+echo "Press any button to continue"
+pause
 systemctl enable tgcp
 systemctl start tgcp
 echo "Complited!"
