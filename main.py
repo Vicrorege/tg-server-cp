@@ -29,6 +29,7 @@ def get_answer(answer_code, lang = config["app"]["lang"]):
 @bot.message_handler(commands=['start'])
 def start(message):
     if message.id == 1:
+        print("abcd")
         bot.send_message(message.chat.id, get_answer("registration_greet").format(id=message.from_user.id), parse_mode='HTML')
     else:
         if message.from_user.id in allowed_users:
@@ -72,6 +73,7 @@ def services_(message):
 def service_handler(call):
     if call.from_user.id in allowed_users:
         service = call.data
+        buffer = os.path.join(home, "buffer")
         req=os.system(f'sudo systemctl status {service}>"{buffer}"')
         print(req)
         with open(os.path.join(home, 'buffer'), 'r') as f:
