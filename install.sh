@@ -17,7 +17,13 @@ cp ./tgcp.service /etc/systemd/system/tgcp.service
 
 nano ./config.json
 echo "Press any button to continue"
-pause
+
+read -s -n 1
+
 systemctl enable tgcp
 systemctl start tgcp
+
+sleep 5
+
+systemctl restart tgcp
 echo "Complited!"
